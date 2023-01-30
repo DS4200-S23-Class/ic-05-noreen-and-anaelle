@@ -1,5 +1,10 @@
+let clickCount = 0
+
 function buttonClicked(){
-    let newText = "Button was clicked";
+
     let buttonDiv = document.getElementById("button-div");
-    buttonDiv.innerHTML = newText;
+    let counter = clickCount++;
+
+    buttonDiv.innerHTML = "Number of times button clicked: " + counter;
+
 }
